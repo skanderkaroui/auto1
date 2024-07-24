@@ -4,15 +4,17 @@
     "description": "Demo Chrome Extension that uses React and Webpack",
     "version": "1.0.0",
     "action": {
-      "default_popup": "index.html"
+      "default_popup": "index.html",
+      "default_icon":"auto.png"
     },
     "background": {
       "service_worker": "background.js"
     },
     "content_scripts": [
       {
-        "matches": ["<all_urls>"],
-        "js": ["contentScript.js"]
+        "matches": ["https://meet.google/*"],
+        "js": ["contentScript.js"],
+        "css":["styles.css"]
       }
     ]
   }
