@@ -24,9 +24,10 @@
   },
   "contributors": [],
   "scripts": {
-    "dev": "",
-    "test": "",
-    "build": "webpack --config webpack.config.js"
+    "dev": "vite",
+    "build-vite": "vite build",
+    "build-webpack": "webpack --config webpack.config.js",
+    "build": "npm run build-vite && npm run build-webpack"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.8",
