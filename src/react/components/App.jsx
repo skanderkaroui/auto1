@@ -20,7 +20,7 @@ const App = () => {
   return (
     <main>
       <h1>Add User Contact to Page</h1>
-      <button onClick={getRandomUser}>Get Random User</button>
+      <button onClick={toggleChatInterface}>Open Chat Interface</button>
       <h2>Content script says: {scriptResp}</h2>
     </main>
   );
