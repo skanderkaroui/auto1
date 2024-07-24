@@ -25,7 +25,8 @@
   "contributors": [],
   "scripts": {
     "dev": "",
-    "test": ""
+    "test": "",
+    "build":"webpack --config webpack.config.js"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.8",
